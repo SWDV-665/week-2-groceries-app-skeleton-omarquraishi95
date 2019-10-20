@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Grocery List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Welcome to Grocery Application</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>This application emcompasses the the week 2 assignment.</p>
+      </ion-card-content>
+    </ion-card>
+
+
+<!-- List of Sliding Items -->
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>2% Milk</ion-label>
+      <p>2</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Done</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>White Bread</ion-label>
+      <p>1</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Done</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>Cage Free Eggs</ion-label>
+      <p>1</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Done</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Butter</ion-label>
+        <p>1</p>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Done</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+</ion-list>
+
+</ion-content>
